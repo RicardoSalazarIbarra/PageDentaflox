@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARIES</title>
+    <link rel="stylesheet" href="../css/caries.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="h-container">
+        <div class="h-figure">
+          <img
+            src="../../assets/images/siegfriedLogoInicio.webp"
+            alt="Logo"
+            class="h-logo"
+          />
+        </div>
+
+        <label class="h-toggle">
+          <input
+            type="checkbox"
+            id="menu-input"
+            class="h-input"
+            onclick="toggleMenu()"
+          />
+        </label>
+
+        <ul class="h-list" id="menu">
+          <li onclick="inicio()" class="h-item">INICIO</li>
+          <li onclick="irAInformacion()" class="h-item">LO QUE DEBES SABER</li>
+          <li onclick="higieneBucal()" class="h-item">HIGIENE BUCAL</li>
+          <li onclick="promociones()" class="h-item">PROMOCIONES</li>
+          <li onclick="inicio()" class="h-item">BLOG</li>
+          <li onclick="inicio()" class="h-item">CONTACTOS</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Image -->
+      <section class="image-section">
+        <img src="../../assets/images/siegfriedCaries.webp" alt="Caries" />
+      </section>
+
+      <!-- Info -->
+      <section class="info-section">
+        <div class="info-container">
+          <div class="info-title">
+            <p>
+              La caries afecta a 10 millones de niños mexicanos entre los dos y
+              cinco años.
+            </p>
+          </div>
+          <div class="info-description">
+            <p class="info-text">
+              Los dulces son uno de los alimentos más llamativos para los niños,
+              por ello se debe poner extrema atención en su higiene bucal, pues
+              <span class="info-textsc"
+                >según datos de la Organización Mundial de la Salud, la caries
+                afecta a más de 530 millones de niños en el mundo.</span
+              >
+            </p>
+            <p class="info-text">
+              De acuerdo a la académica María Gloria Hirose López, profesora de
+              la Facultad de Odontología de la UNAM: "La caries es una
+              enfermedad crónica que avanza rápidamente y es irreversible si no
+              se atiende a tiempo. En los niños, se presenta principalmente en
+              los dientes superiores anteriores y en los molares".
+            </p>
+            <p class="info-text">
+              Tan sólo en México, de acuerdo a la Dirección General de
+              Epidemiología de la Secretaría de Salud, aproximadamente 1O
+              millones de niños entre los dos y cinco años padecen caries.
+            </p>
+            <p class="info-text">
+              Cabe mencionar que se debe tener extremo cuidado con los dientes
+              de leche de los niños, ya que son la guía para el brote de los
+              permanentes.
+              <span class="info-textsc">Cuando un niño presenta caries</span>
+              probablemente sus dientes permanentes se vean afectados y tendrá
+              más probabilidades de padecer una enfermedad dental de adulto.
+            </p>
+          </div>
+          <div class="info-note">
+            <p class="info-sub-title">UNA NIÑEZ SIN CARIES</p>
+            <p class="info-sub-text">
+              Para evitar que la caries aparezca en los pequeños sólo hay una
+              regla, enseñarlo a cuidar su higiene bucal. Recuerda lavar sus
+              dientes después de cada alimento, sin importar cuántas veces coma
+              al día, sobre todo antes de dormir, pues irse a la cama sin
+              cepillarse los dientes eleva el número de lesiones cariosas.
+            </p>
+            <p class="info-sub-text">
+              Entre otras cosas, visitar periódicamente al dentista es muy
+              importante ya que este podrá observar el correcto desarrollo de su
+              dentición.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="products-section">
+        <div class="p-container">
+          <div class="p-title">
+            <p>
+              Te invitamos a conocer nuestros productos para el cuidado de la
+              higiene bucal.
+            </p>
+          </div>
+          <div class="p-imgs">
+            <picture>
+              <img
+                src="../../assets/images/siegfriedProductos.webp"
+                alt="Productos"
+                class="p-img"
+              />
+            </picture>
+            <!-- Zonas clicables con funciones -->
+            <div onclick="intensivo()" class="zona zona-1"></div>
+            <div onclick="diario()" class="zona zona-2"></div>
+            <div onclick="sensibilidad()" class="zona zona-3"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="f-bg">
+        <div class="f-container">
+          <div class="f-imgs">
+            <img
+              src="../../assets/images/siegfried.webp"
+              alt="Siegfried Rhein"
+              class="f-img-logo"
+            />
+            <img
+              src="../../assets/images/siegfriedLogoCirculo.webp"
+              alt="Certificado"
+              class="f-img-certificate"
+            />
+          </div>
+
+          <div class="f-texts">
+            <h3>Sistema Certificado</h3>
+            <p class="f-text">
+              Siegfried Rhein S.A. de C.V. empresa farmacéutica dedicada al
+              desarrollo, producción, comercialización de productos
+              farmacéuticos y distribución de productos higiénicos, materiales
+              de curación, nutricionales, cosméticos y bebidas hidratantes de
+              uso humano, como muestra de su compromiso con la calidad, la
+              seguridad, la salud ocupacional y el medio ambiente, ha definido
+              los siguientes principios como parte de su política de gestión
+              integral. ...Ver más
+            </p>
+            <div class="f-img-odontologia">
+              <img
+                src="../../assets/images/siegfriedDiente.webp"
+                alt="Odontología"
+                class="f-odontologia"
+              />
+            </div>
+          </div>
+
+          <div class="f-menu-nav">
+            <h3>Menú</h3>
+            <ul class="f-menu">
+              <li onclick="inicio()" class="f-item">INICIO</li>
+              <li onclick="irAInformacion()" class="f-item">
+                LO QUE DEBES SABER
+              </li>
+              <li onclick="higieneBucal()" class="f-item">HIGIENE BUCAL</li>
+              <li onclick="promociones()" class="f-item">PROMOCIONES</li>
+              <li onclick="inicio()" class="f-item">BLOG</li>
+              <li onclick="inicio()" class="f-item">CONTACTOS</li>
+            </ul>
+          </div>
+
+          <div class="f-info">
+            <h3>Contacto</h3>
+            <p class="f-info-ctexto1">
+              Antonio Dovalí Jaime #70, Torre D, Piso12, Santa Fe Del. Álvaro
+              Obregón<br />
+              C.P. 01210 México, Ciudad de México
+            </p>
+            <p class="f-info-ctexto2">
+              55 1055-2600<br />contacto.sr@siegfried.com.mx
+            </p>
+
+            <h3>Aviso de privacidad</h3>
+            <p class="f-info-atexto">
+              SIEGFRIED RHEIN, S.A. de C.V., es responsable de recabar sus datos
+              personales, del uso que se le dé a los mismos y de su protección
+              con base a la Ley. Para mayor información acerca de los datos
+              recabados, los fines, el tratamiento y de los derechos que puede
+              hacer valer, Usted puede acceder a nuestro Aviso de Privacidad
+            </p>
+
+            <h3>Términos y condiciones</h3>
+            <p class="f-info-ttexto">Aviso de Publicidad: XXXXXXXXXXXX</p>
+
+            <h3>Quejas y Sugerencias</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../routes/redirect.js"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const body = document.body;
+
+        menu.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+          body.style.overflow = "hidden"; // 🚫 Bloquea scroll
+        } else {
+          body.style.overflow = ""; // ✅ Vuelve a permitir scroll
+        }
+      }
+    </script>
+  </body>
+</html>

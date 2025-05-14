@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTOEXPLORACIÓN</title>
+    <link rel="stylesheet" href="../css/autoexploracion.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="h-container">
+        <div class="h-figure">
+          <img
+            src="../../assets/images/siegfriedLogoInicio.webp"
+            alt="Logo"
+            class="h-logo"
+          />
+        </div>
+
+        <label class="h-toggle">
+          <input
+            type="checkbox"
+            id="menu-input"
+            class="h-input"
+            onclick="toggleMenu()"
+          />
+        </label>
+
+        <ul class="h-list" id="menu">
+          <li onclick="inicio()" class="h-item">INICIO</li>
+          <li onclick="irAInformacion()" class="h-item">LO QUE DEBES SABER</li>
+          <li onclick="higieneBucal()" class="h-item">HIGIENE BUCAL</li>
+          <li onclick="promociones()" class="h-item">PROMOCIONES</li>
+          <li onclick="inicio()" class="h-item">BLOG</li>
+          <li onclick="inicio()" class="h-item">CONTACTOS</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Image -->
+      <section class="image-section">
+        <img src="../../assets/images/siegfriedAE.webp" alt="Autoexploracion" />
+      </section>
+
+      <!-- Info -->
+      <section class="info-section">
+        <div class="info-container">
+          <div class="info-title">
+            <p>La autoexploración bucal puede salvar tu vida.</p>
+          </div>
+          <div class="info-description">
+            <p class="info-text">
+              Mucho se habla sobre la autoexploración de nuestro cuerpo y a
+              veces se deja de lado que la boca es parte fundamental de éste.
+              ¡Sí!
+              <span class="info-textsc"
+                >La boca también debe ser autoexplorada para prevenir muchas
+                enfermedades, entre ellas el cáncer bucal (oral) y labial.
+              </span>
+              En el mundo, se estima que cada año se producen entre 300 y 700mil
+              nuevos casos de cáncer oral. No obstante, se puede poner un alto a
+              esta enfermedad si se detecta a tiempo.
+            </p>
+            <p class="info-text">
+              <span class="info-textsc"
+                >Una manera fácil de autoexploración en casa es la
+                siguiente:</span
+              >
+            </p>
+            <ul class="info-list">
+              <li>Examina con ayuda de una lupa si es necesario tu boca.</li>
+              <li>
+                Comienza de afuera hacia adentro, por tus labios, paladar,
+                interior de las mejillas, encías y finaliza con la lengua.
+              </li>
+              <li>Busca manchas o bultos extraños.</li>
+              <li>
+                Presta atención a las llagas o heridas que no se curan en 2
+                semanas.
+              </li>
+              <li>
+                Evalúa si tienes molestias al tragar o masticar en la lengua o
+                en la mandíbula.
+              </li>
+              <li>
+                Sí tienes sensación de adormecimiento en la lengua o la boca
+                debes acudir de inmediato al odontólogo para que evalúe estos
+                síntomas.
+              </li>
+            </ul>
+            <p class="info-text">
+              <span class="info-textsc"
+                >Algunos de los factores de riesgo para desarrollar esta
+                enfermedad son:</span
+              >
+            </p>
+            <ul class="info-list">
+              <li>Fumar.</li>
+              <li>No tener una alimentación correcta.</li>
+              <li>Padecer o haber padecido infecciones por virus.</li>
+              <li>Tener una prótesis mal ajustada.</li>
+            </ul>
+            <p class="info-text">
+              Cabe mencionar que diagnosticar a tiempo el cáncer oral puede
+              aumentar hasta en un 90% la supervivencia de los pacientes, por lo
+              que manos a la obra, a autoexplorarse y visitar al dentista
+              periódicamente, sobre todo si presentas alguno de los signos
+              mencionados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="products-section">
+        <div class="p-container">
+          <div class="p-title">
+            <p>
+              Te invitamos a cuidar de tu salud bucal con nuestros productos
+              especializados.
+            </p>
+          </div>
+          <div class="p-imgs">
+            <picture>
+              <img
+                src="../../assets/images/siegfriedProductos.webp"
+                alt="Productos"
+                class="p-img"
+              />
+            </picture>
+            <!-- Zonas clicables con funciones -->
+            <div onclick="intensivo()" class="zona zona-1"></div>
+            <div onclick="diario()" class="zona zona-2"></div>
+            <div onclick="sensibilidad()" class="zona zona-3"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="f-bg">
+        <div class="f-container">
+          <div class="f-imgs">
+            <img
+              src="../../assets/images/siegfried.webp"
+              alt="Siegfried Rhein"
+              class="f-img-logo"
+            />
+            <img
+              src="../../assets/images/siegfriedLogoCirculo.webp"
+              alt="Certificado"
+              class="f-img-certificate"
+            />
+          </div>
+
+          <div class="f-texts">
+            <h3>Sistema Certificado</h3>
+            <p class="f-text">
+              Siegfried Rhein S.A. de C.V. empresa farmacéutica dedicada al
+              desarrollo, producción, comercialización de productos
+              farmacéuticos y distribución de productos higiénicos, materiales
+              de curación, nutricionales, cosméticos y bebidas hidratantes de
+              uso humano, como muestra de su compromiso con la calidad, la
+              seguridad, la salud ocupacional y el medio ambiente, ha definido
+              los siguientes principios como parte de su política de gestión
+              integral. ...Ver más
+            </p>
+            <div class="f-img-odontologia">
+              <img
+                src="../../assets/images/siegfriedDiente.webp"
+                alt="Odontología"
+                class="f-odontologia"
+              />
+            </div>
+          </div>
+
+          <div class="f-menu-nav">
+            <h3>Menú</h3>
+            <ul class="f-menu">
+              <li onclick="inicio()" class="f-item">INICIO</li>
+              <li onclick="irAInformacion()" class="f-item">
+                LO QUE DEBES SABER
+              </li>
+              <li onclick="higieneBucal()" class="f-item">HIGIENE BUCAL</li>
+              <li onclick="promociones()" class="f-item">PROMOCIONES</li>
+              <li onclick="inicio()" class="f-item">BLOG</li>
+              <li onclick="inicio()" class="f-item">CONTACTOS</li>
+            </ul>
+          </div>
+
+          <div class="f-info">
+            <h3>Contacto</h3>
+            <p class="f-info-ctexto1">
+              Antonio Dovalí Jaime #70, Torre D, Piso12, Santa Fe Del. Álvaro
+              Obregón<br />
+              C.P. 01210 México, Ciudad de México
+            </p>
+            <p class="f-info-ctexto2">
+              55 1055-2600<br />contacto.sr@siegfried.com.mx
+            </p>
+
+            <h3>Aviso de privacidad</h3>
+            <p class="f-info-atexto">
+              SIEGFRIED RHEIN, S.A. de C.V., es responsable de recabar sus datos
+              personales, del uso que se le dé a los mismos y de su protección
+              con base a la Ley. Para mayor información acerca de los datos
+              recabados, los fines, el tratamiento y de los derechos que puede
+              hacer valer, Usted puede acceder a nuestro Aviso de Privacidad
+            </p>
+
+            <h3>Términos y condiciones</h3>
+            <p class="f-info-ttexto">Aviso de Publicidad: XXXXXXXXXXXX</p>
+
+            <h3>Quejas y Sugerencias</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../routes/redirect.js"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const body = document.body;
+
+        menu.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+          body.style.overflow = "hidden"; // 🚫 Bloquea scroll
+        } else {
+          body.style.overflow = ""; // ✅ Vuelve a permitir scroll
+        }
+      }
+    </script>
+  </body>
+</html>
