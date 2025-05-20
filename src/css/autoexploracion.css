@@ -210,7 +210,6 @@ body {
 
 /*-------------- FOOTER -------------- */
 .footer {
-    padding: 0.5rem 1rem;
     font-family: "AvenirRegular";
     color: var(--text-color);
 }
@@ -265,12 +264,12 @@ body {
 }
 
 .toggle-span {
-  background: none;
-  border: none;
-  color: var(--text-color);
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
 }
 
 .toggle-span:hover {
@@ -286,8 +285,16 @@ body {
     padding-right: 4.9rem;
 }
 
+.f-logo {
+    display: none;
+}
+
 .f-odontologia {
     width: 120px;
+}
+
+.f-certificate {
+    display: none;
 }
 
 .f-menu-nav {
@@ -301,6 +308,10 @@ body {
     margin: 0;
     font-size: 12px;
     line-height: 1.7;
+}
+
+.f-menu-nav2 {
+    display: none;
 }
 
 .f-item {
@@ -678,12 +689,7 @@ body {
     }
 
     .f-imgs {
-        order: 1;
-        gap: 0.8rem;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        padding-top: 1rem;
+        display: none;
     }
 
     .f-img-logo {
@@ -696,7 +702,7 @@ body {
     }
 
     .f-texts {
-        order: 3;
+        order: 1;
         display: flex;
         height: 100%;
     }
@@ -713,28 +719,41 @@ body {
         justify-content: center;
         align-items: center;
         padding: 0;
+        gap: 3.5rem;
+    }
+
+    .f-logo {
+        display: flex;
+        width: 40px;
     }
 
     .f-odontologia {
         width: 80px;
     }
 
+    .f-certificate {
+        display: flex;
+        width: 70px;
+    }
+
     .f-menu-nav {
-        order: 2;
+        display: none;
+    }
+
+    .f-menu-nav2 {
+        display: block;
+    }
+
+    .f-menu2 {
+        list-style: none;
         padding: 0;
-        width: 50%;
-    }
-
-    .f-menu-nav h3 {
-        padding-left: 3rem;
-    }
-
-    .f-menu {
-        padding-left: 3rem;
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.7;
     }
 
     .f-info {
-        order: 4;
+        order: 2;
         padding: 0;
     }
 
