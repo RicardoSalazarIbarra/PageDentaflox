@@ -95,6 +95,14 @@ body {
     background-color: white;
 }
 
+.h-icon-wrapper {
+    display: none;
+}
+
+.h-logo-mobile {
+    display: none;
+}
+
 /*-------------- CAROUSEL -------------- */
 .carousel-section {
     padding: 0.5rem 1rem;
@@ -509,11 +517,96 @@ body {
         max-width: 100%;
     }
 
+    .h-logo-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-logo-img-top {
+        width: 55px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .h-logo-img-bottom {
+        width: 130px;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .h-logo-top {
+        grid-column: 1 / -1;
+    }
+
+    .h-logo-bottom {
+        grid-column: 1 / -1;
+    }
+
     .h-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+        text-align: center;
         height: 100dvh;
+        background-color: #f8fbff;
     }
 
     .h-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 1rem;
+        padding: 1.5rem 0.5rem;
+        box-shadow: 0 4px 12px #b6d2dd;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        transform: scale(1);
+    }
+
+    .h-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        background-color: #f4f0e9;
+    }
+
+    .h-item:active {
+        transform: scale(0.98);
+    }
+
+    .h-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        background-color: #a0d6de;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .h-item:hover .h-icon-wrapper {
+        background-color: #d1d7da;
+    }
+
+    .h-icon {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        filter: invert(35%) sepia(16%) saturate(10%) hue-rotate(338deg) brightness(99%) contrast(87%);
+        transition: filter 0.3s ease;
+    }
+
+    .h-item:hover .h-icon {
+        filter: brightness(0) saturate(100%) invert(1);
+    }
+
+    .h-text {
         font-size: 1.5rem;
     }
 
@@ -574,12 +667,97 @@ body {
         max-width: 767px;
     }
 
+    .h-logo-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-logo-img-top {
+        width: 55px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .h-logo-img-bottom {
+        width: 130px;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .h-logo-top {
+        grid-column: 1 / -1;
+    }
+
+    .h-logo-bottom {
+        grid-column: 1 / -1;
+    }
+
     .h-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+        text-align: center;
         height: 100dvh;
+        background-color: #f8fbff;
     }
 
     .h-item {
-        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 1rem;
+        padding: 1.5rem 0.5rem;
+        box-shadow: 0 4px 12px #b6d2dd;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        transform: scale(1);
+    }
+
+    .h-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        background-color: #f4f0e9;
+    }
+
+    .h-item:active {
+        transform: scale(0.98);
+    }
+
+    .h-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #a0d6de;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .h-item:hover .h-icon-wrapper {
+        background-color: #d1d7da;
+    }
+
+    .h-icon {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        filter: invert(35%) sepia(16%) saturate(10%) hue-rotate(338deg) brightness(99%) contrast(87%);
+        transition: filter 0.3s ease;
+    }
+
+    .h-item:hover .h-icon {
+        filter: brightness(0) saturate(100%) invert(1);
+    }
+
+    .h-text {
+        font-size: 1rem;
     }
 
     .p-title {
