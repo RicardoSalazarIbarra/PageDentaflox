@@ -288,6 +288,19 @@ body {
     padding-top: 0;
 }
 
+.toggle-span {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.toggle-span:hover {
+    color: var(--dentaflox-rojo);
+}
+
 .f-img-odontologia {
     margin-top: auto;
     display: flex;
